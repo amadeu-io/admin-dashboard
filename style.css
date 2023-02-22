@@ -1,0 +1,92 @@
+/* remove default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* generic styles */
+
+.sidebar, .main { /* testing */
+    border: 0px solid black;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+html, body { /* take up full height*/
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 4fr; /* min sidebar width 200px */
+}
+
+svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: currentColor;
+}
+
+/* sidebar */
+
+.sidebar {
+    --sidebar-space: 28px; /* space between elements */
+    background-color: #374151;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.title {
+    height: 120px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar img {
+    height: 50px;
+    width: 50px;
+    margin: 0 20px;
+}
+
+.sidebar svg {
+    margin: 0 var(--sidebar-space);
+}
+
+.sidebar a {
+    width: 100%;
+    height: calc(2 * var(--sidebar-space));
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a:hover {
+    border-left: 4px solid white;
+    box-sizing: border-box;
+    color: white;
+    background-color: #4b5563;
+}
