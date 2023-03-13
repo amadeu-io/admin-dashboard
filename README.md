@@ -1,9 +1,9 @@
 # Admin Dashboard 📋
 
-<p align="center">
+<p align="center" padding="40px 0">
   <img src="images/page-screenshot.png" width="650" alt="screenshot">
 </p>
-<h2 align="center">
+<h2 align="center" padding-bottom="20px">
   <a href="https://nightrunner4.github.io/admin-dashboard">👉 Demo</a>
 </h2>
 
