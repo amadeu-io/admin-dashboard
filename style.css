@@ -22,11 +22,6 @@ a {
 
 /* generic styles */
 
-.sidebar, .main { /* testing */
-    border: 0px solid black;
-    box-sizing: border-box;
-}
-
 html { /* tailwind gray palette */
     --color-50: #f9fafb;
     --color-100: #f3f4f6;
@@ -62,9 +57,6 @@ body {
     width: 1.6rem;
     height: 1.6rem;
     fill: currentColor;
-}
-
-.icon:hover {
     cursor: pointer;
 }
 
@@ -182,7 +174,7 @@ h1 {
 
 .header-right img:hover {
     transition: 0.2s linear;
-    box-shadow: 0px 0px 0.5px 3px var(--color-highlight);
+    box-shadow: 0px 0px 0.5px 2px var(--color-highlight);
 }
 
 /* content */
@@ -223,7 +215,6 @@ h1 {
     font-weight: 500;
     color: var(--dark-text);
 }
-
 
 .ticket-box:hover > * {
     color: var(--color-highlight);
