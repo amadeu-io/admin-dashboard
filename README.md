@@ -1,14 +1,18 @@
-# Data-Dashboard 📋
+# Admin-Dashboard 📋
 
-Simple &amp; beautiful data visualisation dashboard.
+<img src="images/page-screenshot.png">
 
 <a href='https://nightrunner4.github.io/Data-Dashboard'>👉 Click here to see</a>
 
-Las project of intermediate HTML and CSS of The Odin Project. This app is currently being developed.
+![Alt text](images/page-screenshot.png)
 
-<b>Potential Improvements:</b> 💪
+## About
 
-<b>Found Bugs:</b> 🪲
+Las project of intermediate HTML and CSS of The Odin Project
 
-by nightrunner4
+## Resources Used
+
+
+
+
 
