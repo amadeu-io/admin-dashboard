@@ -1,107 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Data Dashboard</title>
-    <link rel='stylesheet' type='text/css' href='style.css'>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
 
     <!-- sidebar -->
     <div class="sidebar">
-        <div class="title"><img src="images/graph.png"><span class="dashboarda">dashboard</span></div>
-        <ul class="main-links"> 
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M314.175 779q12.825 0 21.325-8.625T344 749V534q0-12.75-8.675-21.375-8.676-8.625-21.5-8.625-12.825 0-21.325 8.625T284 534v215q0 12.75 8.675 21.375 8.676 8.625 21.5 8.625Zm166 0q12.825 0 21.325-8.625T510 749V403q0-12.75-8.675-21.375-8.676-8.625-21.5-8.625-12.825 0-21.325 8.625T450 403v346q0 12.75 8.675 21.375 8.676 8.625 21.5 8.625Zm166 0q12.825 0 21.325-8.625T676 749v-88q0-12.75-8.675-21.375-8.676-8.625-21.5-8.625-12.825 0-21.325 8.625T616 661v88q0 12.75 8.675 21.375 8.676 8.625 21.5 8.625ZM180 936q-24 0-42-18t-18-42V276q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600V276H180v600Zm0 0V276v600Z"/></svg>
-                    Overview
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M140 896q-26 0-43-17t-17-43V683q37-8 61.5-37.5T166 576q0-40-24.5-70T80 469V316q0-26 17-43t43-17h680q26 0 43 17t17 43v153q-37 7-61.5 37T794 576q0 40 24.5 69.5T880 683v153q0 26-17 43t-43 17H140Zm0-60h680V727q-38-26-62-65t-24-86q0-47 24-86t62-65V316H140v109q39 26 62.5 65t23.5 86q0 47-23.5 86T140 727v109Zm340-63q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm0-167q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm0-167q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm0 137Z"/></svg>
-                    Tickets
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M480 976q-34 0-57.5-23.5T399 895h162q0 34-23.5 57.5T480 976ZM348 833q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T348 773h264q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T612 833H348Zm-25-121q-66-43-104.5-107.5T180 459q0-122 89-211t211-89q122 0 211 89t89 211q0 81-38 145.5T637 712H323Zm22-60h270.667Q664 620 692 568.872 720 517.743 720 459q0-99-70.5-169.5T480 219q-99 0-169.5 70.5T240 459q0 58.743 28 109.872Q296 620 345 652Zm135 0Z"/></svg>
-                    Ideas
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M349 806h262q12.75 0 21.375-8.675 8.625-8.676 8.625-21.5 0-12.825-8.625-21.325T611 746H349q-12.75 0-21.375 8.675-8.625 8.676-8.625 21.5 0 12.825 8.625 21.325T349 806Zm0-170h262q12.75 0 21.375-8.675 8.625-8.676 8.625-21.5 0-12.825-8.625-21.325T611 576H349q-12.75 0-21.375 8.675-8.625 8.676-8.625 21.5 0 12.825 8.625 21.325T349 636ZM220 976q-24 0-42-18t-18-42V236q0-24 18-42t42-18h336q12.444 0 23.722 5T599 194l183 183q8 8 13 19.278 5 11.278 5 23.722v496q0 24-18 42t-42 18H220Zm331-584V236H220v680h520V422H581q-12.75 0-21.375-8.625T551 392ZM220 236v186-186 680-680Z"/></svg>
-                    Articles
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M30 816q-12.75 0-21.375-8.625T0 786v-23q0-39.464 41.25-63.232T150 676q12 0 23.5.75T196 679q-8 17-12 34.889-4 17.889-4 38.111v64H30Zm240 0q-12.75 0-21.375-8.625T240 786v-34q0-65 66.5-105.5T480 606q108 0 174 40.5T720 752v34q0 12.75-8.625 21.375T690 816H270Zm510 0v-64q0-20.222-4-38.111-4-17.889-12-35.162 11-1.727 22.5-2.227 11.5-.5 23.582-.5Q877 676 918.5 699.768T960 763v23q0 12.75-8.625 21.375T930 816H780ZM480 666q-81 0-130.5 24.5T300 752v4h360v-5q0-36-49.5-60.5T480 666Zm-330.089-20Q121 646 100.5 625.411 80 604.823 80 575.911 80 547 100.589 526.5q20.588-20.5 49.5-20.5Q179 506 199.5 526.589q20.5 20.588 20.5 49.5Q220 605 199.411 625.5q-20.588 20.5-49.5 20.5Zm660 0Q781 646 760.5 625.411q-20.5-20.588-20.5-49.5Q740 547 760.589 526.5q20.588-20.5 49.5-20.5Q839 506 859.5 526.589q20.5 20.588 20.5 49.5Q880 605 859.411 625.5q-20.588 20.5-49.5 20.5ZM480 576q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-180q-25.5 0-42.75 17.25T420 456q0 25.5 17.25 42.75T480 516q25.5 0 42.75-17.25T540 456q0-25.5-17.25-42.75T480 396Zm0 360Zm0-300Z"/></svg>
-                    Communities
-                </a>
-            </li>
-        </ul>
-        <ul class="settings-links">
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M546 976H414q-11 0-19.5-7T384 951l-16-101q-19-7-40-19t-37-25l-93 43q-11 5-22 1.5T159 836L93 719q-6-10-3-21t12-18l86-63q-2-9-2.5-20.5T185 576q0-9 .5-20.5T188 535l-86-63q-9-7-12-18t3-21l66-117q6-11 17-14.5t22 1.5l93 43q16-13 37-25t40-18l16-102q2-11 10.5-18t19.5-7h132q11 0 19.5 7t10.5 18l16 101q19 7 40.5 18.5T669 346l93-43q11-5 22-1.5t17 14.5l66 116q6 10 3.5 21.5T858 472l-86 61q2 10 2.5 21.5t.5 21.5q0 10-.5 21t-2.5 21l86 62q9 7 12 18t-3 21l-66 117q-6 11-17 14.5t-22-1.5l-93-43q-16 13-36.5 25.5T592 850l-16 101q-2 11-10.5 18t-19.5 7Zm-66-270q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm0-60q-29 0-49.5-20.5T410 576q0-29 20.5-49.5T480 506q29 0 49.5 20.5T550 576q0 29-20.5 49.5T480 646Zm0-70Zm-44 340h88l14-112q33-8 62.5-25t53.5-41l106 46 40-72-94-69q4-17 6.5-33.5T715 576q0-17-2-33.5t-7-33.5l94-69-40-72-106 46q-23-26-52-43.5T538 348l-14-112h-88l-14 112q-34 7-63.5 24T306 414l-106-46-40 72 94 69q-4 17-6.5 33.5T245 576q0 17 2.5 33.5T254 643l-94 69 40 72 106-46q24 24 53.5 41t62.5 25l14 112Z"/></svg>
-                    Settings
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M484 809q16 0 27-11t11-27q0-16-11-27t-27-11q-16 0-27 11t-11 27q0 16 11 27t27 11Zm-1-413q34 0 55 18.5t21 47.5q0 20-12 39.5T508 544q-26 23-41.5 48.5T451 639q0 11 8.5 17.5T479 663q12 0 20-8t10-20q3-20 13.5-35.5T555 566q30-25 43.5-50t13.5-56q0-53-34.5-85T486 343q-38 0-70 15t-53 44q-8 11-6.5 22.5T366 442q11 8 23.5 5t20.5-14q13-18 31.5-27.5T483 396Zm-3 580q-84 0-157-30.5T196 861q-54-54-85-127T80 576q0-84 31-157t85-127q54-54 127-85t157-31q83 0 156 31t127 85q54 54 85.5 127T880 576q0 85-31.5 158T763 861q-54 54-127 84.5T480 976Zm0-411Zm0 351q141 0 240.5-100T820 576q0-140-99.5-240T480 236q-143 0-241.5 100T140 576q0 140 98.5 240T480 916Z"/></svg>
-                    Support
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m439 623-79-79q-9-9-22-9t-22 9q-9 9-9 22t9 22l99 99q9 9 21.5 9t21.5-9l185-185q8-8 8-21t-8-21q-8-8-20.5-8t-20.5 8L439 623Zm41 350q-4 0-7.5-.5T466 971q-134-40-220-164.5T160 533V337q0-19 11-34.5t28-22.5l260-97q11-4 21-4t21 4l260 97q17 7 28 22.5t11 34.5v196q0 149-86 273.5T494 971l-14 2Zm0-60q115-38 187.5-143.5T740 533V337l-260-98-260 98v196q0 131 72.5 236.5T480 913Zm0-337Z"/></svg>
-                    Privacy
-                </a>
-            </li>
-        </ul>
+      <div class="title">
+        <img id="logo" src="images/logo.svg" alt="logo" />
+        <span class="dashboard-title">dashboard</span>
+      </div>
+      <ul class="main-links">
+        <li>
+          <a href="#">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48">
+              <path
+                d="M314.175 779q12.825 0 21.325-8.625T344 749V534q0-12.75-8.675-21.375-8.676-8.625-21.5-8.625-12.825 0-21.325 8.625T284 534v215q0 12.75 8.675 21.375 8.676 8.625 21.5 8.625Zm166 0q12.825 0 21.325-8.625T510 749V403q0-12.75-8.675-21.375-8.676-8.625-21.5-8.625-12.825 0-21.325 8.625T450 403v346q0 12.75 8.675 21.375 8.676 8.625 21.5 8.625Zm166 0q12.825 0 21.325-8.625T676 749v-88q0-12.75-8.675-21.375-8.676-8.625-21.5-8.625-12.825 0-21.325 8.625T616 661v88q0 12.75 8.675 21.375 8.676 8.625 21.5 8.625ZM180 936q-24 0-42-18t-18-42V276q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600V276H180v600Zm0 0V276v600Z" />
+            </svg>
+            Overview
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48">
+              <path
+                d="M140 896q-26 0-43-17t-17-43V683q37-8 61.5-37.5T166 576q0-40-24.5-70T80 469V316q0-26 17-43t43-17h680q26 0 43 17t17 43v153q-37 7-61.5 37T794 576q0 40 24.5 69.5T880 683v153q0 26-17 43t-43 17H140Zm0-60h680V727q-38-26-62-65t-24-86q0-47 24-86t62-65V316H140v109q39 26 62.5 65t23.5 86q0 47-23.5 86T140 727v109Zm340-63q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm0-167q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm0-167q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm0 137Z" />
+            </svg>
+            Tickets
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48">
+              <path
+                d="M480 976q-34 0-57.5-23.5T399 895h162q0 34-23.5 57.5T480 976ZM348 833q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T348 773h264q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T612 833H348Zm-25-121q-66-43-104.5-107.5T180 459q0-122 89-211t211-89q122 0 211 89t89 211q0 81-38 145.5T637 712H323Zm22-60h270.667Q664 620 692 568.872 720 517.743 720 459q0-99-70.5-169.5T480 219q-99 0-169.5 70.5T240 459q0 58.743 28 109.872Q296 620 345 652Zm135 0Z" />
+            </svg>
+            Ideas
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48">
+              <path
+                d="M349 806h262q12.75 0 21.375-8.675 8.625-8.676 8.625-21.5 0-12.825-8.625-21.325T611 746H349q-12.75 0-21.375 8.675-8.625 8.676-8.625 21.5 0 12.825 8.625 21.325T349 806Zm0-170h262q12.75 0 21.375-8.675 8.625-8.676 8.625-21.5 0-12.825-8.625-21.325T611 576H349q-12.75 0-21.375 8.675-8.625 8.676-8.625 21.5 0 12.825 8.625 21.325T349 636ZM220 976q-24 0-42-18t-18-42V236q0-24 18-42t42-18h336q12.444 0 23.722 5T599 194l183 183q8 8 13 19.278 5 11.278 5 23.722v496q0 24-18 42t-42 18H220Zm331-584V236H220v680h520V422H581q-12.75 0-21.375-8.625T551 392ZM220 236v186-186 680-680Z" />
+            </svg>
+            Articles
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48">
+              <path
+                d="M30 816q-12.75 0-21.375-8.625T0 786v-23q0-39.464 41.25-63.232T150 676q12 0 23.5.75T196 679q-8 17-12 34.889-4 17.889-4 38.111v64H30Zm240 0q-12.75 0-21.375-8.625T240 786v-34q0-65 66.5-105.5T480 606q108 0 174 40.5T720 752v34q0 12.75-8.625 21.375T690 816H270Zm510 0v-64q0-20.222-4-38.111-4-17.889-12-35.162 11-1.727 22.5-2.227 11.5-.5 23.582-.5Q877 676 918.5 699.768T960 763v23q0 12.75-8.625 21.375T930 816H780ZM480 666q-81 0-130.5 24.5T300 752v4h360v-5q0-36-49.5-60.5T480 666Zm-330.089-20Q121 646 100.5 625.411 80 604.823 80 575.911 80 547 100.589 526.5q20.588-20.5 49.5-20.5Q179 506 199.5 526.589q20.5 20.588 20.5 49.5Q220 605 199.411 625.5q-20.588 20.5-49.5 20.5Zm660 0Q781 646 760.5 625.411q-20.5-20.588-20.5-49.5Q740 547 760.589 526.5q20.588-20.5 49.5-20.5Q839 506 859.5 526.589q20.5 20.588 20.5 49.5Q880 605 859.411 625.5q-20.588 20.5-49.5 20.5ZM480 576q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-180q-25.5 0-42.75 17.25T420 456q0 25.5 17.25 42.75T480 516q25.5 0 42.75-17.25T540 456q0-25.5-17.25-42.75T480 396Zm0 360Zm0-300Z" />
+            </svg>
+            Communities
+          </a>
+        </li>
+      </ul>
+      <ul class="settings-links">
+        <li>
+          <a href="#">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48">
+              <path
+                d="M546 976H414q-11 0-19.5-7T384 951l-16-101q-19-7-40-19t-37-25l-93 43q-11 5-22 1.5T159 836L93 719q-6-10-3-21t12-18l86-63q-2-9-2.5-20.5T185 576q0-9 .5-20.5T188 535l-86-63q-9-7-12-18t3-21l66-117q6-11 17-14.5t22 1.5l93 43q16-13 37-25t40-18l16-102q2-11 10.5-18t19.5-7h132q11 0 19.5 7t10.5 18l16 101q19 7 40.5 18.5T669 346l93-43q11-5 22-1.5t17 14.5l66 116q6 10 3.5 21.5T858 472l-86 61q2 10 2.5 21.5t.5 21.5q0 10-.5 21t-2.5 21l86 62q9 7 12 18t-3 21l-66 117q-6 11-17 14.5t-22-1.5l-93-43q-16 13-36.5 25.5T592 850l-16 101q-2 11-10.5 18t-19.5 7Zm-66-270q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm0-60q-29 0-49.5-20.5T410 576q0-29 20.5-49.5T480 506q29 0 49.5 20.5T550 576q0 29-20.5 49.5T480 646Zm0-70Zm-44 340h88l14-112q33-8 62.5-25t53.5-41l106 46 40-72-94-69q4-17 6.5-33.5T715 576q0-17-2-33.5t-7-33.5l94-69-40-72-106 46q-23-26-52-43.5T538 348l-14-112h-88l-14 112q-34 7-63.5 24T306 414l-106-46-40 72 94 69q-4 17-6.5 33.5T245 576q0 17 2.5 33.5T254 643l-94 69 40 72 106-46q24 24 53.5 41t62.5 25l14 112Z" />
+            </svg>
+            Settings
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48">
+              <path
+                d="M484 809q16 0 27-11t11-27q0-16-11-27t-27-11q-16 0-27 11t-11 27q0 16 11 27t27 11Zm-1-413q34 0 55 18.5t21 47.5q0 20-12 39.5T508 544q-26 23-41.5 48.5T451 639q0 11 8.5 17.5T479 663q12 0 20-8t10-20q3-20 13.5-35.5T555 566q30-25 43.5-50t13.5-56q0-53-34.5-85T486 343q-38 0-70 15t-53 44q-8 11-6.5 22.5T366 442q11 8 23.5 5t20.5-14q13-18 31.5-27.5T483 396Zm-3 580q-84 0-157-30.5T196 861q-54-54-85-127T80 576q0-84 31-157t85-127q54-54 127-85t157-31q83 0 156 31t127 85q54 54 85.5 127T880 576q0 85-31.5 158T763 861q-54 54-127 84.5T480 976Zm0-411Zm0 351q141 0 240.5-100T820 576q0-140-99.5-240T480 236q-143 0-241.5 100T140 576q0 140 98.5 240T480 916Z" />
+            </svg>
+            Support
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48">
+              <path
+                d="m439 623-79-79q-9-9-22-9t-22 9q-9 9-9 22t9 22l99 99q9 9 21.5 9t21.5-9l185-185q8-8 8-21t-8-21q-8-8-20.5-8t-20.5 8L439 623Zm41 350q-4 0-7.5-.5T466 971q-134-40-220-164.5T160 533V337q0-19 11-34.5t28-22.5l260-97q11-4 21-4t21 4l260 97q17 7 28 22.5t11 34.5v196q0 149-86 273.5T494 971l-14 2Zm0-60q115-38 187.5-143.5T740 533V337l-260-98-260 98v196q0 131 72.5 236.5T480 913Zm0-337Z" />
+            </svg>
+            Privacy
+          </a>
+        </li>
+      </ul>
     </div>
 
     <!-- main -->
     <div class="main">
-        <div class="header">
-            <div class="header-left">
-                <div class="header-lef-title">
-                    <h1>Overview</h1>
-                </div>
-                <div class="header-left-icons">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M176.118 868.435q-17.521 0-28.972-11.501-11.452-11.502-11.452-28.566t11.452-28.39q11.451-11.326 28.723-11.326h48.913V498.479q0-87.701 51.761-159.264 51.761-71.563 137.848-90.494v-25.939q0-27.239 19.067-45.207 19.068-17.967 46.307-17.967t46.542 17.967q19.302 17.968 19.302 45.207v25.939q86.653 18.931 138.914 90.494 52.261 71.563 52.261 159.264v290.173h47.912q16.636 0 28.406 11.501 11.769 11.502 11.769 28.566t-11.769 28.39q-11.77 11.326-28.406 11.326H176.118ZM480 561.565Zm.283 428.566q-33.95 0-59.378-24.828-25.427-24.829-25.427-59.694h169.609q0 35.261-25.044 59.892-25.043 24.63-59.76 24.63ZM304 788.652h353V498.479q0-75-50.5-126.5t-125-51.5q-74.5 0-126 51.5t-51.5 126.5v290.173Z"/></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M766.652 922.044 529.043 685.001q-29.434 24.26-69.111 37.934-39.676 13.674-85.323 13.674-112.119 0-189.864-77.826Q106.999 580.957 106.999 471t77.827-187.783q77.826-77.826 188.283-77.826 110.456 0 187.782 77.826 77.327 77.826 77.327 187.933 0 43.98-13.152 83.133-13.153 39.152-39.457 73.587l239.609 237.608q11.826 11.833 11.826 28.069 0 16.236-12.739 28.41-12.077 12.478-29.174 12.478t-28.479-12.391ZM373.808 657.391q77.659 0 131.425-54.533Q558.999 548.326 558.999 471q0-77.326-53.849-131.858-53.849-54.533-131.342-54.533-78.326 0-132.958 54.533Q186.218 393.674 186.218 471q0 77.326 54.549 131.858 54.549 54.533 133.041 54.533Z"/></svg>
-                </div>
-            </div>
-            <div class="header-right">
-                <div class="vertical-line"></div>
-                <div class="header-right-name">
-                    Amadeu Serras
-                </div>
-                <div class="header-right-img">
-                    <img src="images/IMG_20220817_171922_2.jpg" alt="Amadeu Serras">
-                </div>
-            </div>
-               
-            
+
+      <!-- header -->
+      <div class="header">
+        <div class="header-left">
+          <div class="header-lef-title">
+            <h1>Overview</h1>
+          </div>
+          <div class="header-left-icons">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48">
+              <path
+                d="M176.118 868.435q-17.521 0-28.972-11.501-11.452-11.502-11.452-28.566t11.452-28.39q11.451-11.326 28.723-11.326h48.913V498.479q0-87.701 51.761-159.264 51.761-71.563 137.848-90.494v-25.939q0-27.239 19.067-45.207 19.068-17.967 46.307-17.967t46.542 17.967q19.302 17.968 19.302 45.207v25.939q86.653 18.931 138.914 90.494 52.261 71.563 52.261 159.264v290.173h47.912q16.636 0 28.406 11.501 11.769 11.502 11.769 28.566t-11.769 28.39q-11.77 11.326-28.406 11.326H176.118ZM480 561.565Zm.283 428.566q-33.95 0-59.378-24.828-25.427-24.829-25.427-59.694h169.609q0 35.261-25.044 59.892-25.043 24.63-59.76 24.63ZM304 788.652h353V498.479q0-75-50.5-126.5t-125-51.5q-74.5 0-126 51.5t-51.5 126.5v290.173Z" />
+            </svg>
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48">
+              <path
+                d="M766.652 922.044 529.043 685.001q-29.434 24.26-69.111 37.934-39.676 13.674-85.323 13.674-112.119 0-189.864-77.826Q106.999 580.957 106.999 471t77.827-187.783q77.826-77.826 188.283-77.826 110.456 0 187.782 77.826 77.327 77.826 77.327 187.933 0 43.98-13.152 83.133-13.153 39.152-39.457 73.587l239.609 237.608q11.826 11.833 11.826 28.069 0 16.236-12.739 28.41-12.077 12.478-29.174 12.478t-28.479-12.391ZM373.808 657.391q77.659 0 131.425-54.533Q558.999 548.326 558.999 471q0-77.326-53.849-131.858-53.849-54.533-131.342-54.533-78.326 0-132.958 54.533Q186.218 393.674 186.218 471q0 77.326 54.549 131.858 54.549 54.533 133.041 54.533Z" />
+            </svg>
+          </div>
         </div>
-        <div class="content">
-        
+        <div class="header-right">
+          <div class="vertical-line"></div>
+          <div class="header-right-name">
+            <a href="https://github.com/nightrunner4" target="_blank">
+              Amadeu Serras
+            </a>
+          </div>
+          <div class="header-right-img">
+            <a href="https://github.com/nightrunner4" target="_blank"
+              ><img src="images/profile-pic.jpg" alt="Amadeu Serras"
+            /></a>
+          </div>
         </div>
+      </div>
+
+      <!-- content -->
+      <div class="content">
+        <div class="ticket-box">
+          <span class="ticket-box-title">Open</span>
+          <span class="ticket-box-number">12</span>
+        </div>
+        <div class="ticket-box">
+          <span class="ticket-box-title">Unresolved</span>
+          <span class="ticket-box-number">32</span>
+        </div>
+        <div class="ticket-box">
+          <span class="ticket-box-title">On hold</span>
+          <span class="ticket-box-number">21</span>
+        </div>
+        <div class="ticket-box">
+          <span class="ticket-box-title">Overdue</span>
+          <span class="ticket-box-number">7</span>
+        </div>
+
+        <div class="chart-box">
+          <div class="chart-box-left">
+            <h3 class="trends-title">Today's Trends</h3>
+            <img class="chart" src="charts/chart.svg" alt="chart" />
+          </div>
+
+          <div class="chart-box-right-box">
+            <span class="chart-box-right-box-title">Resolved</span>
+            <span class="chart-box-right-box-number">134</span>
+          </div>
+          <div class="chart-box-right-box">
+            <span class="chart-box-right-box-title">Received</span>
+            <span class="chart-box-right-box-number">254</span>
+          </div>
+          <div class="chart-box-right-box">
+            <span class="chart-box-right-box-title">Average Response Time</span>
+            <span class="chart-box-right-box-number">4h 2m</span>
+          </div>
+          <div class="chart-box-right-box">
+            <span class="chart-box-right-box-title">Resolution within SLA</span>
+            <span class="chart-box-right-box-number">94%</span>
+          </div>
+        </div>
+
+        <div class="unresolved-box">
+          <div class="unresolved-box-title">
+            <span class="unresolved-box-title-title">
+              <h3 class="unresolved-title">Unresolved Tickets</h3>
+              <span class="unresolved-box-title-title-sub">Group: 
+                <span id="dark-support">Support</span>
+              </span>
+            </span>
+            <span class="unresolved-box-title-view"><a href="#">View details</a></span>
+          </div>
+          <div class="unresolved-box-list">
+            <span class="unresolved-box-list-title">Waiting on feature request</span>
+            <span class="unresolved-box-list-number">3289</span>
+          </div>
+          <div class="unresolved-box-list">
+            <span class="unresolved-box-list-title">
+              Awaiting customer respons
+            </span>
+            <span class="unresolved-box-list-number">729</span>
+          </div>
+          <div class="unresolved-box-list">
+            <span class="unresolved-box-list-title">
+              Awaiting developer fix
+            </span>
+            <span class="unresolved-box-list-number">89</span>
+          </div>
+          <div class="unresolved-box-list">
+            <span class="unresolved-box-list-title">Pending</span>
+            <span class="unresolved-box-list-number">44</span>
+          </div>
+        </div>
+
+        <div class="tasks-box">
+          <div class="tasks-box-title">
+            <span class="tasks-box-title-title">
+              <h3 class="tasks-title">Tasks</h3>
+              <span class="tasks-box-title-title-sub">Today</span>
+            </span>
+            <span class="tasks-box-title-view"><a href="#">View all</a></span>
+          </div>
+          <div class="tasks-box-list">
+            <span class="tasks-box-list-title">
+              <input type="checkbox"/>
+              Design new logo
+            </span>
+            <span class="tasks-box-list-status urgent">
+              URGENT
+            </span>
+          </div>
+          <div class="tasks-box-list">
+            <span class="tasks-box-list-title">
+              <input type="checkbox"/>
+              Create new landing page
+            </span>
+            <span class="tasks-box-list-status new">
+              NEW
+            </span>
+          </div>
+          <div class="tasks-box-list">
+            <span class="tasks-box-list-title">
+              <input type="checkbox"/>
+              Redesign homepage
+            </span>
+            <span class="tasks-box-list-status default">
+              DEFAULT
+            </span>
+          </div>
+          <div class="tasks-box-list">
+            <span class="tasks-box-list-title">
+              <input type="checkbox"/>
+              Add new analytics
+            </span>
+            <span class="tasks-box-list-status assigned">
+              ASSIGNED
+            </span>
+          </div>
+        </div>
+
+      </div>
     </div>
-    
-    <script src='script.js'></script>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
