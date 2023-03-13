@@ -1,8 +1,11 @@
-# Admin-Dashboard 📋
+# Admin Dashboard 📋
 
-![Screenshot](images/page-screenshot.png)
-
-[👉 Demo](https://nightrunner4.github.io/admin-dashboard)
+<p align="center">
+  <img src="images/page-screenshot.png" width="650" alt="screenshot">
+</p>
+<h2 align="center">
+  <a href="https://nightrunner4.github.io/admin-dashboard">👉 Demo</a>
+</h2>
 
 ### About 📖
 
