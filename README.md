@@ -4,7 +4,7 @@
   <img src="images/page-screenshot.png" width="650px" alt="screenshot">
 </p>
 <h2 align="center">
-  <a href="https://amadeu-io.github.io/admin-dashboard">👉 Demo</a>
+  <a href="https://amadeuio.github.io/admin-dashboard">👉 Demo</a>
 </h2>
 
 ### About 📖
